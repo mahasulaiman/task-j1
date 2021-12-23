@@ -28,6 +28,25 @@
   box.addEventListener("click", function(event){
     event.target.style.backgroundColor = "red";
   })
+  var boxes = document.getElementsByClassName("box-to-select");
+  for (const element of boxes) {
+    element.addEventListener("click", function (event){
+      event.target.style.backgroundColor = "gray";
+      console.log(event,"event");
+    });
+  }
+
+  queryFifthBox = document.querySelector("div ul #box-5");
+  queryFifthBox.addEventListener("click", function (event) {
+    event.target.style.backgroundColor = "red";
+  });
+
+  const queryBoxes = document.querySelectorAll(".box-to-select-2");
+  for (const element of queryBoxes){
+    element.addEventListener("click", function (event){
+      event.target.style.backgroundColor = "pink";
+    })
+  }
 
       //Get element by id
 
